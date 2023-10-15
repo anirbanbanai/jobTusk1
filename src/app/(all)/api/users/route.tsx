@@ -4,7 +4,7 @@ import Users from "@/models/users/Users";
 import { NextResponse } from "next/server";
 
 
-export async function POST(request: { json: () => PromiseLike<{ name: any; description: any; }> | { name: any; description: any; }; }) {
+export async function POST(request : any) {
     const {name,description} = await request.json();
     const all = await Users.create({name, description});
     return NextResponse.json(all, {status: 200})
