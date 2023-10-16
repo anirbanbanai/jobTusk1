@@ -15,3 +15,10 @@ export async function GET(){
     const allUser = await Users.find();
     return NextResponse.json(allUser)
 }
+
+export async function DELETE(request: any){
+    const id = request.nextUrl.searchParams.get("id");
+    await connectMongoDb();
+    await Users.findByIdAndDelete(id);
+    return NextResponse.json({message: "Users Deleted"}, {status: 200})
+}

@@ -134,12 +134,18 @@
 
 
 .parents {
-  width: 50%;
+  width: 100%;
   height: 300px;
   perspective: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .parents {
+    width: 50%;
+  }
 }
 
 .card {
