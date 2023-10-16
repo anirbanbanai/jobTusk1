@@ -14,6 +14,7 @@ const ShowData = () => {
     // console.log(data);
 
     const HandleDelete = (id: string) => {
+        router.refresh();
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -36,7 +37,7 @@ const ShowData = () => {
                             showConfirmButton: false,
                             timer: 1500
                           })
-                        router.push("/");
+                       
                     }
                 })
                 
@@ -55,10 +56,10 @@ const ShowData = () => {
                             <h3>{user?.name}</h3>
                             <h4>{user?.description}</h4>
                         </div>
-                        <div>
-                            <button onClick={() => HandleDelete(user?._id)}>
+                        <div onClick={() => HandleDelete(user?._id)}>
+                        
                                 <RiDeleteBin6Line className="txrl" />
-                            </button>
+                          
                         </div>
                     </div>
                 ))

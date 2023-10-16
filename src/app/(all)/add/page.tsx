@@ -69,11 +69,11 @@ router.push("/")
                         <div className="content">
                             <span className="title">Add your data</span>
                             <div className="inputGroup">
-                                <input className="" placeholder="name" {...register('name')} />
+                                <input className="" placeholder="name" {...register('name')} required />
 
                             </div>
                             <div className="inputGroup">
-                                <input className="" placeholder="description" {...register("description")} />
+                                <input className="" placeholder="description" {...register("description")} required/>
 
                             </div>
 
