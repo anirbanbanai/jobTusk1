@@ -54,6 +54,14 @@
   margin: auto, 0, auto, 0;
 }
 
+.f{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  text-decoration: none;
+}
 .navbar {
   display: flex;
   gap: 10px;
@@ -79,7 +87,7 @@
 }
 
 .txxl {
-  font-size: 50px;
+  font-size: 25px;
   color: rgb(43, 46, 230);
   text-align: center;
   padding-top: 20px;

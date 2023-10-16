@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { MdOutlineNoteAdd } from 'react-icons/md';
+import { BsPlusCircleFill } from 'react-icons/bs';
 
 const AddNew = () => {
     return (
         <div className='tx'>
           
-            <Link href="/add">
-            <MdOutlineNoteAdd className="  txxl"/>
+            <Link className='f' href="/add">
+            <BsPlusCircleFill className=" txxl "/>
+            <h3 className=''>  New</h3>
             </Link>
         </div>
     );
